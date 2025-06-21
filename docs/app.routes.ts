@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
-import { RedirectComponent } from './pages/redirect/redirect.component';
-import { ErrorComponent } from './pages/error/error.component';
+import { DashboardComponent } from '../src/app/pages/dashboard/dashboard.component';
+import { RedirectComponent } from '../src/app/pages/redirect/redirect.component';
+import { ErrorComponent } from '../src/app/pages/error/error.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'error', pathMatch: 'full' },

@@ -1,7 +1,7 @@
 import { ApplicationConfig, provideBrowserGlobalErrorListeners, provideZoneChangeDetection } from '@angular/core';
 import { provideRouter, withHashLocation } from '@angular/router';
 
-import { routes } from './app.routes';
+import { routes } from '../../docs/app.routes';
 
 export const appConfig: ApplicationConfig = {
   providers: [
