@@ -1,0 +1,24 @@
+.error__container {
+    background-color: rgb(60, 30, 0);
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10%;
+}
+
+h1, h2 {
+    color: white;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}

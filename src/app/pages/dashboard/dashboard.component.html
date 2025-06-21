@@ -1,0 +1,23 @@
+<section class="dashboard__header">
+    <h1> Dashboard </h1>
+</section>
+
+<section class="dashboard__content">
+  <section class="dashboard__content__partner-list">
+    @for (partner of partners; track partner.code) {
+      <div class="dashboard__content__partner-list__partner-card">
+        <h2> {{partner.code}} </h2>
+        <label class="switch">
+          <input
+            #cb
+            type="checkbox"
+            (change)="togglePartnerStatus(cb.checked, partner.code)"
+            [checked]="partner.isActive"
+          >
+          <span class="slider"></span>
+        </label>
+      </div>
+      }
+  </section>
+</section>
+
