@@ -7,7 +7,7 @@
       var path = location.pathname.replace(/^\/redirect-test/, '');
       var search = location.search || '';
       var hash = location.hash || '';
-      location.replace('/redirect-test/index.html?redirected=1&path=' + encodeURIComponent(path + search + hash));
+      location.replace('/redirect-test/#' + path + search + hash);
     </script>
   </head>
   <body>
