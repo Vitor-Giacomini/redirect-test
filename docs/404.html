@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <title>Redirecting...</title>
     <script>
-      var path = location.pathname.replace(/^\/redirect-test/, '');
+      var repo = '/redirect-test';
+      var path = location.pathname.replace(new RegExp('^' + repo), '');
       var search = location.search || '';
       var hash = location.hash || '';
       var cleanPath = path.replace(/^\/+/, '');
-      location.replace('/redirect-test/#' + cleanPath + search + hash);
+      location.replace(repo + '/#' + cleanPath + search + hash);
     </script>
   </head>
   <body>
